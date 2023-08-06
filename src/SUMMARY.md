@@ -7,6 +7,15 @@
 - [Linux常用命令](studying/Linux-Command-Guide.md)
 - [Git常用命令](studying/Git-Command-Guide.md)
 - [v2ray for linux](studying/v2ray-for-linux.md)
+- [tumx](studying/tumx.md)
+
+
+
 # PROJECT
 
 * [MPPT仿真实验](project/MPPT/MPPT仿真实验.md)
+
+# I.MXULL
+
+* [嵌入式Linux]()
+  *  [环境搭建](studying/Linux/环境搭建.md)
