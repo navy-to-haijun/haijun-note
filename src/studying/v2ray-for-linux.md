@@ -50,6 +50,8 @@ https://github.com/v2fly/v2ray-core/releases/tag/v4.31.0
 /opt/v2ray/v2ray run -c /opt/v2ray/config.json
 ```
 
+![start](../picture/v2ray-for-linux/v2ray-test.png)
+
 ## 建立守护进程
 
 一旦命令行能正常运行，则可以将启动v2ray命令写到守护进程中。
@@ -84,15 +86,19 @@ sudo systemctl status v2ray
 sudo systemctl enable v2ray
 ```
 
+![status](../picture/v2ray-for-linux/v2ray-status.png)
+
 测试
 
 ```shell
 curl -i google.com
 ```
 
-可视化网络设置
+![status](../picture/v2ray-for-linux/v2ray-test1.png)
 
-效果和命令一致。
+## 最后
+
+网络设置(可以写到`~/.bashrc`，也可以临时输入到终端)
 
 ```bash
 export all_proxy="socks://127.0.0.1:10808/"
@@ -102,6 +108,11 @@ export https_proxy="http://127.0.0.1:10809/"
 
 系统设置
 
+效果和命令一致。
+
 `设置->网络`
 
 ![网络设置(系统)](../picture/v2ray-for-linux/网络设置(系统).png)
+
+现在为止，可以访问个Google了。
+
