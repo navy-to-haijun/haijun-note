@@ -14,6 +14,7 @@
 # PROJECT
 
 * [MPPT仿真实验](project/MPPT/MPPT仿真实验.md)
+* [CircuitPython](project/MPPT/CircuitPython.md)
 
 # I.MXULL
 
