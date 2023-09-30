@@ -8,3 +8,7 @@
 2023.7.18
 * add Linux Command Guide
 * addd Git Command Guide(TODO)
+
+2032.9.30
+
+* add xr806 ua
