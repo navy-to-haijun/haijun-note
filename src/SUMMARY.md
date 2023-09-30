@@ -15,6 +15,8 @@
 
 * [MPPT仿真实验](project/MPPT/MPPT仿真实验.md)
 * [CircuitPython](project/MPPT/CircuitPython.md)
+* [XR806串口测试](project/XR806_uart_test.md)
+* [XR806](project/XR806.md)
 
 # I.MXULL
 
