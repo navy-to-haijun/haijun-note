@@ -277,7 +277,7 @@ cp project/demo/ros2/gcc/defconfig .config
  make build -j6
 ```
 
-![xr806-串口](../picture/XR806-串口测试/xr806-串口-1696060168831-2.png)
+![xr806-串口](../picture/XR806-串口测试/xr806-串口.png)
 
 最后生成的镜像文件为：microros_system.img
 
@@ -285,7 +285,7 @@ cp project/demo/ros2/gcc/defconfig .config
 
 SDK提供的下载工具位于工程文件的`tools`中。
 
-![xr806-下载](../picture/XR806-串口测试/xr806-下载-1696060442125-5.png)
+![xr806-下载](../picture/XR806-串口测试/xr806-下载.png)
 
 其中，`phoeniXMC`为linux在的下载工具，其提供的命令如下：
 
@@ -367,5 +367,15 @@ not Combined image!!
 
 ## 效果
 
+<video src="../picture/XR806-串口测试/xr806串口测试.mp4"></video>
 
+## 总结
 
+* uart 应为有demo，所以实现得比较顺利；
+* 想通过FreeRTOS建立多线程失败，目前只能在main线程中进行操作。关于线程的建立，还有待研究；
+
+## 下一步计划
+
+1. 移植micro-ROS，实现在uart下的通信；
+2. 完成udp测试；
+3. 实现micro-ROS在udp下的通信；
