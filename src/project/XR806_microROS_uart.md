@@ -599,9 +599,76 @@ ros2 run micro_ros_agent micro_ros_agent serial -D /dev/ttyUSB1 -v6
 
 启动XR806，结果如下
 
+<video src="../picture/XR806_microROS_uart/microROS发布功能测试.mp4"></video>
 
+### subscriber测试
 
+#### XR806端
 
+初始化
+
+```c
+void microros_sub_int32_init()
+{
+    #if defined MICROROS_SERIAL
+        set_microros_transports();
+    #endif
+
+    allocator = rcl_get_default_allocator();
+    // create init_options
+	RCCHECK(rclc_support_init(&support, 0, NULL, &allocator));
+    // create node
+	RCCHECK(rclc_node_init_default(&node, "xr806_node", "", &support));
+
+	// create subscriber
+	RCCHECK(rclc_subscription_init_default(
+		&subscriber,
+		&node,
+		ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
+		"xr806_node_subscriber"));
+    
+    // create executor
+	RCCHECK(rclc_executor_init(&executor, &support.context, 1, &allocator));
+	RCCHECK(rclc_executor_add_subscription(&executor, &subscriber, &recv_msg, &subscription_callback, ON_NEW_DATA));
+
+     printf("micro_ros init successful.\n");
+    // ros2 topic pub /micro_ros_xr806_node_subscriber std_msgs/msg/Int32 data:\ 12
+}
+```
+
+* 节点：xr806_node
+* 话题：xr806_node_subscriber
+
+回调函数
+
+```c
+static void subscription_callback(const void * msgin)
+{
+    count ++;
+	const std_msgs__msg__Int32 * msg = (const std_msgs__msg__Int32 *)msgin;
+	printf("%d: Received: %d\n", count, msg->data);
+}
+```
+
+回调函数打印订阅的次数和消息内容。
+
+#### PC端
+
+1. 运行agent`ros2 run micro_ros_agent micro_ros_agent serial -D /dev/ttyUSB1 -v6`,
+2. 检查话题，节点是否存在；
+3. 发布话题：`ros2 topic pub /micro_ros_xr806_node_subscriber std_msgs/msg/Int32 data:\ XX`
+
+效果：
+
+<video src="../picture/XR806_microROS_uart/microROS订阅功能测试.mp4"></video>
+
+## 总结
+
+1. 整体来说microROS的移植比较顺利；
+
+## 下一步
+
+1. 完成udp通信；
 
 ## 参考
 
