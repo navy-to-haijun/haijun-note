@@ -8,6 +8,7 @@
 - [Git常用命令](studying/Git-Command-Guide.md)
 - [v2ray for linux](studying/v2ray-for-linux.md)
 - [tumx](studying/tumx.md)
+- [ESP32S3（ESP-idf v5.1）移植lvgl（v8.3）](studying/esp32-transplant-lvgl.md)
 
 
 
