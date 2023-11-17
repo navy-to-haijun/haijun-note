@@ -9,6 +9,10 @@
 * add Linux Command Guide
 * addd Git Command Guide(TODO)
 
-2032.9.30
+2023.9.30
 
 * add xr806
+
+2020.10.17
+
+* add ESP32 MPU6050
