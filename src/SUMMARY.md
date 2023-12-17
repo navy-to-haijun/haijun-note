@@ -10,8 +10,11 @@
 - [tumx](studying/tumx.md)
 - [ESP32S3（ESP-idf v5.1）移植lvgl（v8.3）](studying/esp32-transplant-lvgl.md)
 - [ESP32-MPU6050](studying/esp32-mpu6050.md)
+- [esp32-debug](studying/esp32-debug.md)
+- [esp32-wsl](studying/esp32-wsl.md)
 
-
+* [Doxygen](studying/Doxygen.md)
+* [send-float-data](studying/send-float-data.md)
 
 # PROJECT
 

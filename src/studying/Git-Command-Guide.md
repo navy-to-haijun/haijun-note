@@ -12,7 +12,17 @@ git config --list --global
 # 清除(缺失等同于清除)
 git config --unset --global user.name
 git config --unset --global user.email
+
+# 添加ssh
+ssh-keygen -t rsa -C "13166962097@163.com"
+# 查看
+ cd ~/.ssh/
+ vim id_rsa.pub
 ```
+
+
+
+
 
  ### 删除本地和远程的分支
 

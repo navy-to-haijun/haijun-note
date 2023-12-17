@@ -13,6 +13,10 @@
 
 * add xr806
 
-2020.10.17
+2022.10.17
 
 * add ESP32 MPU6050
+
+2022.12.17
+
+* add send  float data
