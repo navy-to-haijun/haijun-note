@@ -15,7 +15,7 @@
 
 * [Doxygen](studying/Doxygen.md)
 * [send-float-data](studying/send-float-data.md)
-* [pyocd 命令](studying/pyocd 命令使用.md)
+* [pyocd 命令](studying/pyocd命令使用.md)
 * [基于cmake构建gd32f470工程](studying/基于cmake构建gd32f470工程.md)
 * [基于pyocd调试gd32f470](studying/基于pyocd 调试gd32f470.md)
 
