@@ -20,7 +20,7 @@ WSL（Windows Subsyetem for Linux） 目前已发布两代产品：WSL1 和 WSL2
 
 `ctrl+shfit+esc`进入任务管理器，查看 BIOS 是否开启虚拟化。
 
-![image-20231207204641526](../picture/esp32-wsl/image-20231207204641526.png)
+![image-20231207204641526](../../picture/esp32-wsl/image-20231207204641526.png)
 
 如果显示禁用，则要进入BIOS，在`config`中将`Intel Virtual Technology`设置为`true`。
 
@@ -28,15 +28,15 @@ WSL（Windows Subsyetem for Linux） 目前已发布两代产品：WSL1 和 WSL2
 
 打开控制面板 -> 程序和功能 -> 启动或关闭Windows功能 -> Hyper & 适用于linux的Windows系统-> 点击确认，等待安装完成。
 
-![image-20231207205603073](../picture/esp32-wsl/image-20231207205603073.png)
+![image-20231207205603073](../../picture/esp32-wsl/image-20231207205603073.png)
 
-![image-20231207205636025](../picture/esp32-wsl/image-20231207205636025.png)
+![image-20231207205636025](../../picture/esp32-wsl/image-20231207205636025.png)
 
 ### 3.安装 Ubuntu
 
 直接在Microsoft Store中搜索“ubuntu”
 
-![image-20231207210622279](../picture/esp32-wsl/image-20231207210622279.png)
+![image-20231207210622279](../../picture/esp32-wsl/image-20231207210622279.png)
 
 直接选择安装即可。
 
@@ -52,7 +52,7 @@ wsl无法获取USB设备，必须使用usbipd-win将连接到windows上的usb设
 
 在g[ithub](https://github.com/dorssel/usbipd-win/releases/tag/v4.0.0)中下载最新的usbipd-win[^1]
 
-![image-20231207212254994](../picture/esp32-wsl/image-20231207212254994.png)
+![image-20231207212254994](../../picture/esp32-wsl/image-20231207212254994.png)
 
 直接点击`subipd-win.msi`安装，安装完毕后根据提示重启电脑
 
@@ -268,19 +268,19 @@ usbipd unbind -g <GUID>
 
 1. 检查`remote-ssh`插件是否安装；
 
-![image-20231208225310680](../picture/esp32-wsl/image-20231208225310680.png)
+![image-20231208225310680](../../picture/esp32-wsl/image-20231208225310680.png)
 
 
 
 2. 连接wsl；
 
-<img src="../picture/esp32-wsl/image-20231208225502008.png" alt="image-20231208225502008" style="zoom:50%;" />
+<img src="../../picture/esp32-wsl/image-20231208225502008.png" alt="image-20231208225502008" style="zoom:50%;" />
 
 3. 连接以后，安装ESP32-idf；
 
 注意：本地安装的插件不会自动安装到wsl中，所以在安装ESP32-idf插件时，将和c、cmake、python相关的插件一起安装到wsl中
 
-![image-20231210104226834](../picture/esp32-wsl/image-20231210104226834.png)
+![image-20231210104226834](../../picture/esp32-wsl/image-20231210104226834.png)
 
 
 
@@ -294,7 +294,7 @@ sudo apt-get install git wget flex bison gperf python3-pip python3-venv python3-
 
 2. 在vscode中通过`ctr+shift+p`打开命令面板 -> 输入figcon`ESP-IDF:Config ESP-IDF extension`打开安装esp-idf安装界面。
 
-![image-20231210105149388](../picture/esp32-wsl/image-20231210105149388.png)
+![image-20231210105149388](../../picture/esp32-wsl/image-20231210105149388.png)
 
 * 下载服务器尽量选择`Espressif`，因为它可以防止因为网络问题，导致下载失败；
 * esp-idf版本尽量选择最新的，即第一个（我原先选择过v5.1，可以正常下载，但是环境总有一点小问题：提示找不到编译链）
@@ -307,7 +307,7 @@ sudo apt-get install git wget flex bison gperf python3-pip python3-venv python3-
 
 安装完成的界面如下
 
-![image-20231209193752813](../picture/esp32-wsl/image-20231209193752813.png)
+![image-20231209193752813](../../picture/esp32-wsl/image-20231209193752813.png)
 
 如果要使用openocd，请按照提示设置操作。
 
@@ -361,7 +361,7 @@ Error: Command failed: dfu-util --version
 
 3. 选择在Windows下的安装路径
 
-![image-20231210112437359](../picture/esp32-wsl/image-20231210112437359.png)
+![image-20231210112437359](../../picture/esp32-wsl/image-20231210112437359.png)
 
 等待它重新安装虚拟环境。
 

@@ -1,6 +1,6 @@
 # pyocd 命令
 
-![pyocd命令行初探大纲](../picture/pyocd 命令使用/pyocd命令行初探大纲.png)
+![pyocd命令行初探大纲](../../picture/pyocd 命令使用/pyocd命令行初探大纲.png)
 
 ## 准备工作
 
@@ -139,7 +139,7 @@ haijun@haijun:~$ pyocd pack show
 >值得说明的是，pyocd有两种方式支持mcu，一种是内置(builtin)，一种是pack，可以通过`pyocd list -t`查看
 
 
-![Pasted image 20240313232018](../picture/pyocd 命令使用/Pasted image 20240313232018.png)
+![Pasted image 20240313232018](../../picture/pyocd 命令使用/Pasted image 20240313232018.png)
 
 2. 使用`find`查找gd32f470zg的pack包；
 

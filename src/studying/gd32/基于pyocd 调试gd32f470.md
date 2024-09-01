@@ -4,7 +4,7 @@
 
 [toc]
 
-![大纲](../picture/基于pyocd 调试gd32f470/大纲.png)
+![大纲](../../picture/基于pyocd 调试gd32f470/大纲.png)
 
 前面实现了，编译和下载，再实现调试功能就能在linux下开发gd32了。调试的话还是的利用pyocd。
 
@@ -172,7 +172,7 @@ Continuing.
 
 ### 4. 启动调试
 
-![image-20240325203944837](../picture/基于pyocd 调试gd32f470/调试界面.png)
+![image-20240325203944837](../../picture/基于pyocd 调试gd32f470/调试界面.png)
 
 在vsode中的调试没有IAR那么舒服，但是能用。
 

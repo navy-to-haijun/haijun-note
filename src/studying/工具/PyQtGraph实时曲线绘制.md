@@ -12,7 +12,7 @@
 
 其实现的效果如图所示：
 
-![result](../picture/PyQtGraph/result.gif)
+![result](../../picture/PyQtGraph/result.gif)
 
 关于MCU侧的的具体处理，详看后面提供的代码链接或者前面的推文。大致就是MCU通过UDP发出MPU6050的姿态数据。
 
@@ -29,7 +29,7 @@ matplotlib擅长静态数据展示，QT对于动态数据优势更大。由于�
 
 PyQtGraph 是基于 PyQt / PySide 和 numpy 构建的纯 Python 图形和 GUI 库，与Qt图形界面框架完美融合。通过demo展示，完全被它所吸引住了：
 
-![img](../picture/PyQtGraph/plotting_sm.png)
+![img](../../picture/PyQtGraph/plotting_sm.png)
 
 ## pyQtGraph
 

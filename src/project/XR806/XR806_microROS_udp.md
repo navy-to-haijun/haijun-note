@@ -233,5 +233,5 @@ cd tools
 
 
 
-<video src="../picture/XR806_microROS_udp/microROS_udp_test.mp4"></video>
+<video src="../../picture/XR806_microROS_udp/microROS_udp_test.mp4"></video>
 

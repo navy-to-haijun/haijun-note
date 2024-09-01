@@ -14,7 +14,7 @@ cp -rfd dir1 dir2
 
 #### 文件权限
 
-![image-20230718172815430](../picture/Linux-Commend-Guide/image-20230718172815430.png)
+![image-20230718172815430](../../picture/Linux-Commend-Guide/image-20230718172815430.png)
 
 - r: 读：4
 - w：写：2

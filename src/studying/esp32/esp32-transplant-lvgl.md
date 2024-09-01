@@ -10,11 +10,11 @@
 
 ### 硬件
 
-<img src="../picture/esp32-transplant-lvgl/实物图.PNG" alt="实物图" style="zoom: 20%;" />
+<img src="../../picture/esp32-transplant-lvgl/实物图.PNG" alt="实物图" style="zoom: 20%;" />
 
 没有使用官方的（有点小贵），顺便买个平替版。
 
-![image-20231106202444522](../picture/esp32-transplant-lvgl/image-20231106202444522.png)
+![image-20231106202444522](../../picture/esp32-transplant-lvgl/image-20231106202444522.png)
 
 屏幕使用一款TFT屏幕，分辨率为240*240，通信方式为SPI，驱动为ST7789。没有触摸芯片
 
@@ -28,15 +28,15 @@
 
 在vscode中打开命令面板，输入`ESP-IDF:New Project`
 
-![image-20231106201055172](../picture/esp32-transplant-lvgl/image-20231106201055172.png)
+![image-20231106201055172](../../picture/esp32-transplant-lvgl/image-20231106201055172.png)
 
 填写工程名字，选择路径，选择芯片，最后选择模板
 
-![image-20231106201614527](../picture/esp32-transplant-lvgl/image-20231106201614527.png)
+![image-20231106201614527](../../picture/esp32-transplant-lvgl/image-20231106201614527.png)
 
 本次选择ESP-idf
 
-![image-20231106201846652](../picture/esp32-transplant-lvgl/image-20231106201846652.png)
+![image-20231106201846652](../../picture/esp32-transplant-lvgl/image-20231106201846652.png)
 
 ## 2.下载额外组件
 
@@ -52,13 +52,13 @@ git clone -b release/v8.3 git@github.com:lvgl/lvgl.git
 
 工程结构如下
 
-![image-20231106203741834](../picture/esp32-transplant-lvgl/image-20231106203741834.png)
+![image-20231106203741834](../../picture/esp32-transplant-lvgl/image-20231106203741834.png)
 
 ### 3. 修改menuconfig
 
 #### 修改flash
 
-![image-20231106204107118](../picture/esp32-transplant-lvgl/image-20231106204107118.png)
+![image-20231106204107118](../../picture/esp32-transplant-lvgl/image-20231106204107118.png)
 
 #### lvgl_esp32_drivers
 
@@ -74,7 +74,7 @@ git clone -b release/v8.3 git@github.com:lvgl/lvgl.git
 | CS   | 9     | CS                   |
 | BLC  | 46    | 勾选高电平为点亮屏幕 |
 
-![image-20231106205535303](../picture/esp32-transplant-lvgl/image-20231106205535303.png)
+![image-20231106205535303](../../picture/esp32-transplant-lvgl/image-20231106205535303.png)
 
 ### 4 编译
 
@@ -280,7 +280,7 @@ E (398) spi: spi_bus_initialize(774): invalid dma channel, chip only support spi
 
 ##  成果
 
-![image-20231106224319372](../picture/esp32-transplant-lvgl/image-20231106224319372.png)
+![image-20231106224319372](../../picture/esp32-transplant-lvgl/image-20231106224319372.png)
 
 ## 不足
 

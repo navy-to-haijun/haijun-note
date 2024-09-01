@@ -2,7 +2,7 @@
 
 开发板资源
 
-![image-20240206212050384](../picture/taishanpi/image-20240206212050384.png)
+![image-20240206212050384](../../picture/taishanpi/image-20240206212050384.png)
 
 RK3566
 

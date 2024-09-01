@@ -81,9 +81,9 @@ git push origin main
 
 选择仓库的`Settings->Pages`，将界面中的`build and deployment`中的`deploy from a branch`修改为`Github Actions`
 
-![image-20230715174639137](../picture/基于mdbook和github-pages部署个人网站/image-20230715174639137.png)
+![image-20230715174639137](../../picture/基于mdbook和github-pages部署个人网站/image-20230715174639137.png)
 
-![image-20230715175152016](../picture/基于mdbook和github-pages部署个人网站/image-20230715175152016.png)
+![image-20230715175152016](../../picture/基于mdbook和github-pages部署个人网站/image-20230715175152016.png)
 
 
 
@@ -107,7 +107,7 @@ run: |
           echo `pwd`/mdbook >> $GITHUB_PATH
 ```
 
-![image-20230715175944223](../picture/基于mdbook和github-pages部署个人网站/image-20230715175944223.png)
+![image-20230715175944223](../../picture/基于mdbook和github-pages部署个人网站/image-20230715175944223.png)
 
 点击`commit changes`进行提交，push到github上
 
@@ -115,7 +115,7 @@ push后github会增加一个`.github/workflows`文件，里面的`mdbook.yml`为
 
 在`Actions`中可以看见部署进程：
 
-![image-20230715180438051](../picture/基于mdbook和github-pages部署个人网站/image-20230715180438051.png)
+![image-20230715180438051](../../picture/基于mdbook和github-pages部署个人网站/image-20230715180438051.png)
 
 通过链接可以访问。
 

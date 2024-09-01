@@ -2,7 +2,7 @@
 
 [toc]
 
-![大纲](../picture/基于cmake构建gd32f470工程/大纲.png)
+![大纲](../../picture/基于cmake构建gd32f470工程/大纲.png)
 
 对于cortex-M核的MCU，主流还是使用keil或者IAR进行代码编写、编译和调试。美中不足的就是它们在window系统中使用，无法在linux环境中使用。今天就在linux下使用cmake+vsode实现gd32f470的编程。
 

@@ -285,7 +285,7 @@ cp project/demo/ros2/gcc/defconfig .config
 
 SDK提供的下载工具位于工程文件的`tools`中。
 
-![xr806-下载](../picture/XR806-串口测试/xr806-下载.png)
+![xr806-下载](../../picture/XR806-串口测试/xr806-下载.png)
 
 其中，`phoeniXMC`为linux在的下载工具，其提供的命令如下：
 
@@ -367,7 +367,7 @@ not Combined image!!
 
 ## 效果
 
-<video src="../picture/XR806-串口测试/xr806串口测试.mp4"></video>
+<video src="../../picture/XR806-串口测试/xr806串口测试.mp4"></video>
 
 ## 总结
 

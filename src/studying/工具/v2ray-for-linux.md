@@ -50,7 +50,7 @@ https://github.com/v2fly/v2ray-core/releases/tag/v4.31.0
 /opt/v2ray/v2ray run -c /opt/v2ray/config.json
 ```
 
-![start](../picture/v2ray-for-linux/v2ray-test.png)
+![start](../../picture/v2ray-for-linux/v2ray-test.png)
 
 ## 建立守护进程
 
@@ -86,7 +86,7 @@ sudo systemctl status v2ray
 sudo systemctl enable v2ray
 ```
 
-![status](../picture/v2ray-for-linux/v2ray-status.png)
+![status](../../picture/v2ray-for-linux/v2ray-status.png)
 
 测试
 
@@ -94,7 +94,7 @@ sudo systemctl enable v2ray
 curl -i google.com
 ```
 
-![status](../picture/v2ray-for-linux/v2ray-test1.png)
+![status](../../picture/v2ray-for-linux/v2ray-test1.png)
 
 ## 最后
 
@@ -112,7 +112,7 @@ export https_proxy="http://127.0.0.1:10809/"
 
 `设置->网络`
 
-![网络设置(系统)](../picture/v2ray-for-linux/网络设置(系统).png)
+![网络设置(系统)](../../picture/v2ray-for-linux/网络设置(系统).png)
 
 现在为止，可以访问个Google了。
 
