@@ -16,6 +16,7 @@
   * [esp32-debug](studying/esp32/esp32-debug.md)
   * [esp32移植lvgl](studying/esp32/esp32-transplant-lvgl.md)
   * [esp32-wsl](studying/esp32/esp32-wsl.md)
+  * [esp32-驱动步进电机](studying/esp32/esp32-定时器.md)
 
 # linux
 
